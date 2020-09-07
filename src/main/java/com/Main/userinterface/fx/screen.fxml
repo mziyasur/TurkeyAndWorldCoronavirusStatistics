@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="rootPane" prefHeight="177.0" prefWidth="635.0" style="-fx-background-color: DARKGREY;" stylesheets="@../css/main_style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Main.userinterface.fx.ScreenController">
+   <children>
+      <VBox AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label styleClass="main-title" text="COVİD-19 GÜNCEL DURUM" />
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Desktop/International_Flag_of_Planet_Earth.svg.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="textGlobalReport" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="content-text" text="Cases: ... | Recovered: ... | Deaths: ..." wrappingWidth="549.5365753173828" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="621.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Desktop/indir.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="textCountryReport" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="content-text" text="Cases: ... | Recovered: ... | Deaths: ..." wrappingWidth="549.5365753173828" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
